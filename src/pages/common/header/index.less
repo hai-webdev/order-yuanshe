@@ -1,0 +1,133 @@
+.pc-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  .head {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-size: 0;
+    }
+  }
+  .right-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-list {
+      a {
+        color: #fff;
+        font-size: 20px;
+        margin: 0 19px;
+      }
+    }
+    .form {
+      position: relative;
+      input {
+        position: absolute;
+        display: none;
+        top: 30px;
+        right: 0;
+        background-color: transparent;
+        border: 1px solid #eee;
+        height: 32px;
+        width: 160px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        outline: none;
+      }
+      .submit {
+        margin-left: 63px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.m-header {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  display: none;
+  .head {
+    width: calc(100% - 20px);
+    height: 40rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-size: 0;
+      img {
+        max-height: 20px;
+      }
+    }
+  }
+  .right-layout {
+    position: absolute;
+    display: none;
+    padding: 0 20rem;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    top: 40rem;
+    background-color: rgba(0,0,0,1);
+    // display: none;
+    padding-bottom: 20rem;
+    .nav-list {
+      flex-wrap: wrap;
+      a {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        padding: 10rem 0;
+        font-size: 14rem;
+      }
+    }
+    .form {
+      position: relative;
+      input {
+        position: absolute;
+        display: none;
+        top: 30px;
+        right: 0;
+        background-color: transparent;
+        border: 1px solid #eee;
+        height: 32px;
+        width: 160px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-radius: 6px;
+        outline: none;
+      }
+      .submit {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        .icon {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &.on{
+    background-color: #000;
+  }
+}
+
+@import "./mobile.less" screen and (max-width: 768px);

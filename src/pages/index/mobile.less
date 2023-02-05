@@ -1,0 +1,226 @@
+.module {
+  padding: 30rem 0;
+  .title-module {
+    margin-bottom: 20rem;
+    .cn-title {
+      font-size: 18rem;
+      margin-bottom: 21rem;
+      span {
+        z-index: 1;
+        line-height: 1;
+      }
+    }
+    .en-title {
+      font-size: 10rem;
+      margin-bottom: 20rem;
+    }
+
+    .bg-title {
+      font-size: 40rem;
+    }
+  }
+}
+.banner-container {
+  .m {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
+.about-container {
+  &.max-center {
+    width: 100%;
+    max-width: none;
+  }
+  padding: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  .left-layout {
+    width: 100%;
+    margin-bottom: 30rem;
+  }
+  .right-layout {
+    width: 100%;
+    font-size: 13rem;
+    color: #5f5e60;
+    line-height: 2;
+    p {
+      text-indent: 2em;
+    }
+    span {
+      font-weight: bold;
+      color: @mainColor;
+    }
+  }
+}
+.img-container {
+  .m {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+}
+.points-container {
+  .points-wrapper {
+    .points-list {
+      padding-top: 0;
+      .point-item {
+        flex-wrap: wrap;
+        margin-bottom: 20rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .point-title {
+          width: 100%;
+          padding-left: 20%;
+          box-sizing: border-box;
+          .num {
+            font-size: 50rem;
+          }
+          .info {
+            background-color: #fff;
+            padding-left: 0;
+            padding-top: 12rem;
+            position: relative;
+            z-index: 2;
+            top: -15rem;
+            .title {
+              font-size: 14rem;
+              color: @mainColor;
+              font-weight: bold;
+              span {
+                display: none;
+              }
+            }
+            .note {
+              font-size: 11rem;
+              color: #7a7a7a;
+            }
+          }
+        }
+        .point-cont {
+          width: 100%;
+          img {
+            max-width: 100%;
+            &.m {
+              display: block;
+            }
+            &.pc {
+              display: none;
+            }
+          }
+        }
+        &:nth-child(2n + 2) {
+          .point-title {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-left: 0;
+            padding-right: 20%;
+          }
+          .point-cont {
+            order: 3;
+          }
+        }
+      }
+    }
+  }
+}
+.future-container {
+  background-color: #031851;
+  img {
+    position: relative;
+    top: -30rem;
+    z-index: 0;
+    &.m {
+      display: block;
+    }
+    &.pc {
+      display: none;
+    }
+  }
+}
+.partner-container {
+  .desc {
+    font-size: 11rem;
+    margin-bottom: 20rem;
+  }
+  .partner-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .partner-item {
+      width: 30%;
+      .title {
+        font-size: 10rem;
+        color: @mainColor;
+        margin-bottom: 20rem;
+        text-align: center;
+      }
+      img {
+        width: 91.5rem;
+        height: 38rem;
+        margin: 0 auto 9.5rem;
+        border-radius: 5rem;
+      }
+    }
+  }
+}
+.business-container {
+  height: 94rem;
+  .title-module {
+    .cn-title {
+      margin-bottom: 0;
+    }
+    .en-title {
+      margin-bottom: 0;
+    }
+  }
+  .cont {
+    color: #fff;
+    text-align: center;
+    .subtitle {
+      font-size: 10rem;
+    }
+    .title {
+      font-size: 14rem;
+      font-weight: bold;
+    }
+  }
+  .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.cooperation-container {
+  background-color: @mainColor;
+  .cooperation-list {
+    margin-top: 20rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    .cooperation-item {
+      width: 127rem;
+      .title {
+        font-size: 11rem;
+        padding-bottom: 11rem;
+        margin-bottom: 11rem;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
