@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Document</title>
-</head>
+<link href="src/css/index.css" rel="stylesheet"></head>
 
 <body>
   <!-- 引入公共页头 -->
-  <%= require("html-loader!../common/header/index.html") %>
+  <header class="pc-header"> <div class="head max-center"> <h1 class="logo"> 元舍时代 <a href=""> <img src="/public/images/logo.png" alt=""> </a> </h1> <div class="right-layout"> <nav class="nav-list"> <a href="/">首页</a> <a href="/">会员权益</a> <a href="/">元舍·文曲院</a> <a href="/">帮扶计划</a> <a href="/">新闻中心</a> <a href="/">关于我们</a> </nav> <form action="" class="form"> <input type="text"> <button type="submit" class="submit"> <i class="fa fa-search icon" aria-hidden="true"></i> </button> </form> </div> </div> </header> <header class="m-header"> <div class="head"> <h1 class="logo"> 元舍时代 <a href=""> <img src="/public/images/logo.png" alt=""> </a> </h1> <div class="menu"> <img src="/public/images/menu.png" alt=""> </div> <div class="right-layout"> <nav class="nav-list"> <a href="/">首页</a> <a href="/">会员权益</a> <a href="/">元舍·文曲院</a> <a href="/">帮扶计划</a> <a href="/">新闻中心</a> <a href="/">关于我们</a> </nav> <form action="" class="form"> <input type="text"> <button type="submit" class="submit"> <i class="fa fa-search icon" aria-hidden="true"></i> </button> </form> </div> </div> </header>
     <section class="banner-container">
       <img src="/public/images/banner.jpg" class="pc" alt="">
       <img src="/public/images/m-banner.png" class="m" alt="">
@@ -224,7 +224,7 @@
       </ul>
     </section>
     <!-- 引入公共页尾 -->
-    <%= require("html-loader!../common/footer/index.html") %>
-</body>
+    
+<script src="src/js/vendors~index.06a63.js"></script><script src="src/js/index.c7ae1.js"></script></body>
 
 </html>
